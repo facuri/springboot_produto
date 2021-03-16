@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+       <form action="salvarproduto" method="post">
+          <label>ID</label>
+          <input type="text" name="id" readonly="readonly">
+          <label>Nome</label>
+          <input type="text" name="nome">
+          <label>Valor</label>
+          <input type="text" name="valor">
+          <label>Quantidade</label>
+          <input type="text" name=quantidade>
+          <input type="submit" value="Salvar">
+       
+       </form>
+</body>
+</html>
