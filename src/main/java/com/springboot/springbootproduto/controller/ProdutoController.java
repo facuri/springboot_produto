@@ -35,7 +35,7 @@ public class ProdutoController {
 		 
 		 
 	 }
-	 //Fazer o método lista
+	 //Fazer o método lista e a atualização
 	
 	 
 }
