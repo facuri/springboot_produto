@@ -1,5 +1,6 @@
 package com.springboot.springbootproduto.controller;
 
+import java.lang.reflect.Method;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +36,14 @@ public class ProdutoController {
 		 
 		 
 	 }
-	 //Fazer o método lista e a atualização
+	 @RequestMapping(method = RequestMethod.GET, value = "/listaprodutos")
+	 public ModelAndView produtos() {
+		 ModelAndView andView = new  ModelAndView("cadastro/cadastroproduto");
+		 Iterable<Produto> produtoIT = produtoRepository.findAll();
+		 andView.addObject("produtos", produtoIT);
+		 return andView;
+	 }
+	  
 	
 	 
 }
